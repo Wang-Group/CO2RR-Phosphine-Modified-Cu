@@ -53,14 +53,15 @@ The second round includes two sub-analyses with improved feature selection and m
   - `shap_scatter_MolecularSizeMedium.png`
   - `shap_scatter_SurfaceEffAtomNum.png`
 
-- **Final Model Performance:** R² = 0.568 (5-feature model)
-- **Key Descriptors:**
-  - Area on P atom
-  - Averaged local electron attachment energy of P
-  - Medium of the molecular size
-  - Minimum of averaged local ionization energy on P
-  - Number of effective surface atoms
 
+##### Results Directory (`Stepreg-XGB_V2.0sym_20240627_111035/`):
+- **Key Descriptors and Their Physical Significance:**
+  1. **Surface Area Indicator (SurfaceEffAtomNum)** - Counts exposed atoms of the molecule, indicating the available catalytic sites，related to shap_scatter_SurfaceEffAtomNum.png
+  2. **Molecular Width** - Measures the size of the molecule, with larger molecular size increasing FE_C2+ due to requirement of sufficient hydrophobic area，related to shap_scatter_MolecularSizeMedium.png
+  3. **P-atom Openness (P-atom ESP Area)** - Surface area of the phosphorus atom calculated from molecular electron density isosurface allocation; crowded P atoms increase FE_C2+，related to shap_scatter_Atom1_ESPAllArea_Ang_2.png
+  4. **P-atom LEAE** - Averaged local electron attachment energy of P; weak back-bonding (higher LEAE values) increases FE_C2+，related to shap_scatter_Atom1_LEAEAllAverage.png
+  5. **P-atom ALIE** - Minimum of averaged local ionization energy of P; contributes very little to the overall performance，related to shap_scatter_Atom1_ALIEMinValue.png
+     
 ## Methodology
 
 ### Machine Learning Approach
@@ -82,4 +83,5 @@ The second round includes two sub-analyses with improved feature selection and m
 - Python 3.x
 - Jupyter Notebook
 - Required packages: pandas, numpy, scikit-learn, xgboost, shap, matplotlib, seaborn
+
 
