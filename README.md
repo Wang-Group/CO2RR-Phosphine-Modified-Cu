@@ -1,6 +1,6 @@
 # Closed-Loop Discovery of H Spillover-Driven CO2 Reduction in Acidic Electrolyte by Phosphine-Modified Cu
 
-**Author:** Yuming Su  
+**Code provider:** Yuming Su  
 **Research Focus:** Machine learning-driven discovery of phosphine-modified copper catalysts for CO2 electroreduction
 
 ## Project Overview
@@ -82,3 +82,4 @@ The second round includes two sub-analyses with improved feature selection and m
 - Python 3.x
 - Jupyter Notebook
 - Required packages: pandas, numpy, scikit-learn, xgboost, shap, matplotlib, seaborn
+
