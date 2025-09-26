@@ -76,6 +76,37 @@ The second round includes two sub-analyses with improved feature selection and m
 - **Surface Properties:** Effective surface atoms, local ionization energies
 - **Phosphorus-Specific:** Local electron attachment energies, ESP areas on P atoms
 
+### Decision Tree Analysis (`Desicion Tree/`)
+
+**Focus:** Classification analysis using decision tree algorithms for catalyst performance prediction
+
+#### Key Files:
+- **`feature_comparison.ipynb`** - Jupyter notebook for decision tree-based feature comparison and classification analysis
+- **`tree_features0103.csv`** - Feature matrix used for decision tree training
+- **`target_cla.csv`** - Binary classification targets (0/1) for 127 molecules, indicating high/low performance catalysts
+
+**Purpose:** This analysis complements the regression models by providing a classification perspective, identifying clear decision boundaries for catalyst performance and offering interpretable rules for catalyst selection.
+
+### Molecular Mapping (`Molecular map/`)
+
+**Focus:** Comprehensive molecular database and fingerprint analysis for phosphine ligands
+
+#### Key Files:
+- **`P_MAP241018.ipynb`** - Jupyter notebook for molecular mapping and fingerprint analysis
+- **`P_test_0625.csv`** - Comprehensive database of 127 phosphine molecules with CAS numbers, Chinese/English names, and SMILES structures
+- **`Pfp_20241018.csv`** - Molecular fingerprint data for computational analysis
+
+**Purpose:** This section provides the foundational molecular database used throughout the study, including:
+- Complete molecular identification (CAS numbers, systematic names)
+- SMILES representations for computational processing
+- Molecular fingerprints for similarity analysis and structure-activity relationships
+
+**Database Content:** The molecular database includes diverse phosphine ligands ranging from simple trialkylphosphines to complex chiral bisphosphines, covering:
+- Trialkyl/triaryl phosphines (e.g., triphenylphosphine, tricyclohexylphosphine)
+- Bidentate phosphines (e.g., dppe, dppp, dppb derivatives)
+- Chiral phosphines for asymmetric catalysis
+- Phosphine oxides and related compounds
+- Specialized ligands with unique electronic/steric properties
 
 ## Usage Instructions
 
@@ -83,5 +114,4 @@ The second round includes two sub-analyses with improved feature selection and m
 - Python 3.x
 - Jupyter Notebook
 - Required packages: pandas, numpy, scikit-learn, xgboost, shap, matplotlib, seaborn
-
 
