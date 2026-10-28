@@ -1,11 +1,11 @@
-# Closed-Loop Discovery of H Spillover-Driven CO2 Reduction in Acidic Electrolyte by Phosphine-Modified Cu
+# Probing product-specific CO2 reduction regions in phosphine-modified copper gas-diffusion electrodes with 13C/12C isotope gradients
 
 **Code provider:** Yuming Su  
 **Research Focus:** Machine learning-driven discovery of phosphine-modified copper catalysts for CO2 electroreduction
 
 ## Project Overview
 
-This repository contains the computational codes and experimental data for the closed-loop discovery of hydrogen spillover-driven CO2 reduction catalysts. The project employs machine learning techniques, specifically XGBoost regression with SHAP analysis, to identify optimal phosphine-modified copper catalysts for electrochemical CO2 reduction in acidic electrolytes.
+This repository contains the computational codes and experimental data for the Probing product-specific CO2 reduction regions in phosphine-modified copper gas-diffusion electrodes with 13C/12C isotope gradients. The project employs machine learning techniques, specifically XGBoost regression with SHAP analysis, to identify optimal phosphine-modified copper catalysts for electrochemical CO2 reduction in acidic electrolytes.
 
 # Machine learning for phosphine modified copper catalysts
 
